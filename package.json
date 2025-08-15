@@ -1,0 +1,39 @@
+{
+  "name": "video-to-markdown",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "eslintConfig": {
+    "root": true
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint . --ext .js",
+    "lint:fix": "eslint . --ext .js --fix",
+    "test:output": "node test-custom-output.js",
+    "test:seo": "node test-seo-slug.js",
+    "test:thumbnail": "node test-thumbnail.js"
+  },
+  "keywords": [
+    "video",
+    "transcription",
+    "markdown",
+    "mdx",
+    "nextjs"
+  ],
+  "author": "",
+  "license": "ISC",
+  "description": "Convert video files to markdown blog posts using OpenAI",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "fluent-ffmpeg": "^2.1.2",
+    "fs-extra": "^11.1.1",
+    "openai": "^4.20.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.0",
+    "eslint": "^8.57.1"
+  }
+}
