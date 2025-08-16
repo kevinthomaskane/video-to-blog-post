@@ -150,7 +150,7 @@ class VideoToMarkdown {
 
   async generateBlogPost(transcript, videoName) {
     try {
-      const prompt = `Transform this video transcript into a professional blog post. Create an engaging title, compelling description, and well-structured content with proper headings and formatting.
+      const prompt = `Transform this video transcript into a professional blog post. Create an engaging title, compelling description, and well-structured content with proper headings and formatting. Any instances of double quotes that appear in the content, excluding <pre> and <code> sections, should be replaced with &ldquo; and &rdquo; appropriately for HTML compatibility.
 
 Video name: ${videoName}
 Transcript: ${transcript}
