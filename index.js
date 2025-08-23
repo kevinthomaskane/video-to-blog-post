@@ -188,18 +188,6 @@ Respond with JSON in this format:
 
   createMDXContent(blogContent, _slug) {
     return `
-<div className="video-container mb-8">
-  <div className="aspect-video w-full max-w-4xl mx-auto">
-    <iframe
-      className="w-full h-full rounded-lg shadow-lg"
-      src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-      title="${blogContent.title}"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowFullScreen
-    ></iframe>
-  </div>
-</div>
-
 ${blogContent.content}
 
 `;
